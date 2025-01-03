@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colin Conrad</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+      /*Some nice steel colored button design*/
+      .btn-steel{
+        background-color: #2b2b2b;
+        color: #d3d3d3;
+        border-color: #5a5a5a;
+        transition: background-color 0.3 ease, border-color 0.3 ease, color 0.3 ease;
+      }
+      .btn-steel:hover {
+          background-color: #3a3a3a; /* Slightly Lighter Gray on Hover */
+          border-color: #7a7a7a; /* Lighter Steel Gray on Hover */
+          color: white; /* White Text on Hover */
+      }
+    </style>
 </head>
 <body><!--Using bulma so were gonna pull in class hero for quick formats-->
     <nav class="navbar is-primary">
@@ -19,7 +33,7 @@
           </div>
         </div>
       </nav>
-  
+  <!--Hero Section-->
     <section class="hero is-danger is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -28,6 +42,24 @@
                 <a href="about.html" class="button is-light">Learn more about me</a>
             </div>
         </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="title is-ancestor">
+          <!--About me tile-->
+          <div class="title is-parent">
+            <article class="title is-child box has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img src="https://via.placeholder.com/128" alt="About Me">
+              </figure>
+              <h3 class="title is-4">About Me</h3>
+              <p>Learn more about who I am and my journey</p>
+              <a href="about.html" class="btn-steel">About me</a>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
 </body>
 </html>
